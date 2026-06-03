@@ -29,12 +29,12 @@ Before getting started, ensure you have installed:
     ```bash
     cp .env.example .env
     ```
-    Edit the `.env` file and fill in the necessary keys (see the [Configuration](#configuration-env) section).
-    It's mandatory to change this configuration:
+    Edit the `.env` file and fill in the necessary keys (see the [Configuration](#configuration-env) section).  
+    **It's mandatory to change this configuration:**
     ```
     VITE_API_SERVER=http://localhost:14001
     ```
-    Put the current public IP that will hold your API. If you are deploying this inside a machine in a VPN or a different server, put the public IP of that server, with the API port.  
+    Put the current public IP that will host your API. If you are deploying this inside a machine in a VPN or a different server, put the public IP of that server, with the API port.  
     You don't need to change the defaults of the other variables, but its strongly recommended to change the default credentials.
 
 4.  **Start the containers:**
