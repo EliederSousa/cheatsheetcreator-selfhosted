@@ -43,9 +43,7 @@ Before getting started, ensure you have installed:
     ```
 
 The application will be available at:
-* **Frontend:** `http://localhost:14000` (or the port defined in the .env file)
-* **API:** `http://localhost:14001`
-
+* **Frontend:** `http://your-server-ip:14000` (or the port defined in the .env file)
 ---
 
 ## Configuration (.env)
