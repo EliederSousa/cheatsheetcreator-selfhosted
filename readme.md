@@ -14,7 +14,7 @@ Before getting started, ensure you have installed:
 
 1.  **Clone this repository:**
     ```bash
-    git clone https://github.com/EliederSousa/cheatsheet-creator-selfhosted.git
+    git clone https://github.com/EliederSousa/cheatsheetcreator-selfhosted.git
     cd cheatsheet-creator-selfhosted
     ```
 
