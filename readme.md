@@ -4,6 +4,16 @@ This repository contains the necessary infrastructure for simplified deployment 
 
 The project has been optimized to run on both **x64 (PC/Servers)** machines and **ARM64 (Orange Pi, Raspberry Pi)** architectures, making it ideal for self-hosting in homelabs.
 
+<img height="250" alt="image" align="center" src="https://github.com/user-attachments/assets/1063d811-9ed7-431a-8a93-45ddf2513aef" />
+<img height="250" alt="image" align="center" src="https://github.com/user-attachments/assets/3a97a26f-15de-4f03-bbef-e4f4850180aa" />
+<img height="250" alt="image" align="center" src="https://github.com/user-attachments/assets/bb89449b-f740-4737-b038-155bacff9a3c" />
+<img height="250" alt="image" align="center" src="https://github.com/user-attachments/assets/39c2c67d-44ca-4bd9-8a75-7e0105bd1da5" />
+
+
+
+
+
+
 ## Prerequisites
 
 Before getting started, ensure you have installed:
