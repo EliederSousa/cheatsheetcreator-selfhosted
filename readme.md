@@ -14,11 +14,12 @@ Before getting started, ensure you have installed:
 
 1.  **Clone this repository:**
     ```bash
-    git clone https://github.com/eliedersousa/cheatsheet-creator-docker.git
-    cd cheatsheet-creator-docker
+    git clone https://github.com/EliederSousa/cheatsheet-creator-selfhosted.git
+    cd cheatsheet-creator-selfhosted
     ```
 
 2.  **Configure environment variables:**
+    
     Create the `.env` file from the example:
     ```bash
     cp .env.example .env
@@ -31,8 +32,8 @@ Before getting started, ensure you have installed:
     ```
 
 The application will be available at:
-* **Frontend:** `http://localhost:80` (or the port defined in the .env file)
-* **API:** `http://localhost:8080`
+* **Frontend:** `http://localhost:14000` (or the port defined in the .env file)
+* **API:** `http://localhost:14001`
 
 ---
 
@@ -42,11 +43,16 @@ The `.env` file controls the system's behavior. Below are the main variables:
 
 | Variable | Description | Default |
 | :--- | :--- | :--- |
-| `FRONTEND_PORT` | Web interface access port | `80` |
-| `API_PORT` | API access port | `9001` |
-| `API_KEY` | Secret key for administrative operations (delete) | `(required)` |
-| `RATE_LIMIT` | Request limit per minute per IP | `100` |
-| `CORS_ALLOWED_ORIGINS` | Allowed origins for API access | `*` |
+| MONGO_ROOT_USER | Default MongoDB user | admin |
+| MONGO_ROOT_PASS | Put a strong password here! | mysecretpassword |
+| MONGO_DATABASE | MongoDB database name | cheatsheetdb |
+| MONGO_PORT | 14002 | MongoDB port |
+| API_PORT | API port | 14001 |
+| CORS_ALLOWED_ORIGINS | Put a list of domains that can host the frontend | <empty> |
+| RATE_LIMIT | Limit the of request/min to the API (must be a positive number) | 100 | 
+| FRONTEND_PORT | The frontend port | 14000 |
+| VITE_API_SERVER | IP:PORT of API | localhost:14001 |
+| VITE_API_KEY | Left blank if you want a read-only instance | mysecretapipassword |
 
 ---
 
