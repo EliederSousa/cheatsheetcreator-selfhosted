@@ -9,11 +9,6 @@ The project has been optimized to run on both **x64 (PC/Servers)** machines and 
 <img height="250" alt="image" align="center" src="https://github.com/user-attachments/assets/bb89449b-f740-4737-b038-155bacff9a3c" />
 <img height="250" alt="image" align="center" src="https://github.com/user-attachments/assets/39c2c67d-44ca-4bd9-8a75-7e0105bd1da5" />
 
-
-
-
-
-
 ## Prerequisites
 
 Before getting started, ensure you have installed:
@@ -35,8 +30,14 @@ Before getting started, ensure you have installed:
     cp .env.example .env
     ```
     Edit the `.env` file and fill in the necessary keys (see the [Configuration](#configuration-env) section).
+    It's mandatory to change this configuration:
+    ```
+    VITE_API_SERVER=http://localhost:14001
+    ```
+    Put the current public IP that will hold your API. If you are deploying this inside a machine in a VPN or a different server, put the public IP of that server, with the API port.  
+    You don't need to change the defaults of the other variables, but its strongly recommended to change the default credentials.
 
-3.  **Start the containers:**
+4.  **Start the containers:**
     ```bash
     docker-compose up -d
     ```
